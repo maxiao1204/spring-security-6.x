@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+</head>
+<body>
+<h1 style="background-color: red">欢迎登录</h1>
+<!-- 注意:这里的login是post 走的是SpringSecurity底层封装的login -->
+<form th:action="@{/login}" method="post">
+    <!-- 这时候的用户名密码必须是:username、password 后面我们可以设置自定义 -->
+    用户名:<input type="text" name="username"><br/>
+    密码:<input type="password" name="password"><br/>
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>

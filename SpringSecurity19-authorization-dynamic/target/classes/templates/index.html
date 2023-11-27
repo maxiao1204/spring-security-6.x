@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>系统首页</title>
+</head>
+<body>
+<h1 style="background-color: goldenrod">欢迎访问系统</h1>
+<a th:href="@{/admin/api/hello}">admin/api/hello</a><br/>
+<a th:href="@{/app/api/hello}">app/api/hello</a><br/>
+<a th:href="@{/user/api/hello}">user/api/hello</a><br/>
+
+<form th:action="@{/logout}" method="post">
+    <input type="submit" value="退出系统"/>
+</form>
+</body>
+</html>
